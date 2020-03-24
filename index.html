@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="game">
+        <div class="title">
+            <h1>Player</h1>
+            <h1 id="playerID">1</h1>
+            <h1>choose your option!</h1>
+        </div>
+        <div class="content">
+            <div class="options">
+                <div class="choice" onclick="theGame('rock')">
+                    <img src="image/stone.jpg" alt="rock">
+                    <p>Rock</p>
+                </div>
+                <div class="choice" onclick="theGame('paper')">
+                    <img src="image/coloredPaper.jpg" alt="paper">
+                    <p>Paper</p>
+                </div>
+                <div class="choice" onclick="theGame('scissors')">
+                    <img src="image/scissor.jpg" alt="scissors">
+                    <p>Scissors</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="theEnd" id="ending" style="display: none;">
+        <h1 class="message" id="winner"></h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
